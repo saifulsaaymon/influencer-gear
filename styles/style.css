@@ -1,0 +1,385 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common style */
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: indianred;
+}
+.body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  margin-left: 120px;
+  margin-bottom: 146px;
+}
+
+.brand-title {
+  font-size: 2rem;
+  text-shadow: 0 2px 2px;
+}
+
+.start-journey {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.half-journey {
+  background: yellow;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: white;
+}
+.half-journey img {
+  display: block;
+  margin: 0 auto;
+}
+.half-journey .journey-content {
+  margin-right: 4rem;
+}
+
+/* --------CSS Animation------ */
+.half-width img {
+  width: 500px;
+  animation-name: img-animation;
+  animation-duration: 5s;
+}
+@keyframes img-animation {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 500px;
+  }
+}
+
+.arrow {
+  margin-right: 0.5rem;
+}
+.starting-journey {
+  font-size: 3rem;
+  color: black;
+  font-weight: 1000;
+  text-shadow: 0 2px;
+}
+.prebook-button {
+  text-decoration: none;
+  background-color: #e02c6d;
+  color: white;
+  width: 196px;
+  height: 44px;
+  width: 196px;
+  padding: 10px 24px;
+  border-radius: 41px;
+  margin-top: 16px;
+}
+
+/* Popular collections */
+
+.popular-collection {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  /* left:50%;
+  transform: translateX(-50%); */
+}
+.collection-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.see-more {
+  text-align: last;
+}
+.all-collections {
+  width: 77%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: -10px !important;
+  margin: 0 auto;
+}
+.collections {
+  border: 1px solid rgba(240, 232, 232, 0.582);
+  border-radius: 5px;
+  padding-left: 14px;
+  padding-top: 14px;
+  /* padding-right: 14px; */
+  margin: 14px;
+  width: 329px;
+  box-shadow: 10px 10px 40px #aaaaaa;
+  /* height: 476px; */
+}
+.star-color {
+  color: #fb8200;
+}
+.see-more {
+  text-decoration: none;
+  color: rgb(173, 6, 34);
+  font-weight: 800;
+  text-align: right;
+  margin-top: 50px;
+}
+/* ---------------get in touch --------------*/
+.touch-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(206, 226, 226);
+  border: 1px solid red;
+}
+.get-in-touch {
+  text-align: center;
+}
+
+.get-in img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+.submit-area {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  top: 30%;
+}
+.submit {
+  text-align: center;
+  margin-top: 10px;
+  height: 50px;
+  width: 50;
+  /* padding-top: 50px; */
+  padding-right: 20px;
+  border: 1px solid red;
+}
+.submit-btn {
+  margin-top: 30px;
+  margin-left: 50px;
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 8px;
+}
+.footer {
+  border: none;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+  padding: 50px 0;
+}
+.footer-icon {
+  margin: 10px 16px;
+  padding: 10px;
+}
+
+/* ----------------------------------------Popular Collection Style------------------------------------ */
+/* ----Grid---- */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 2.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.grid-item {
+  width: 85%;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+/* -----Card----- */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  padding: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.star-icon {
+  text-align: left;
+}
+.icon {
+  font-size: 1rem;
+  font-weight: 1000;
+  color: indianred;
+}
+
+.icon-rating {
+  font-size: 1rem;
+  color: #464242;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  text-align: left;
+}
+.card-content {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  color: #464242;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* --h1----h6 style---- */
+h1 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+}
+h2 {
+  text-align: left;
+  font-size: 2rem;
+  margin: 0 0;
+}
+
+.instagram:hover {
+  color: rgb(253, 29, 29);
+  font-size: 2rem;
+  transition-duration: 2s;
+}
+.twitter:hover {
+  color: rgb(29, 161, 242);
+  font-size: 2rem;
+  transition-duration: 2s;
+}
+.youtube:hover {
+  color: rgb(253, 29, 29);
+  font-size: 2rem;
+  transition-duration: 2s;
+}
+
+/* media queries */
+
+/* mobile devices */
+@media only screen and (max-width: 688px) {
+  main {
+    margin-top: -30%;
+  }
+  .header {
+    width: 100%;
+  }
+  .brand-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    line-height: 2rem;
+    text-shadow: 0px 2px 2px;
+    margin-left: -250px;
+  }
+  .start-journey {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .half-width img {
+    width: 250px;
+    animation-name: img-animation;
+    animation-duration: 5s;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20%;
+  }
+  @keyframes img-animation {
+    from {
+      width: 100px;
+    }
+    to {
+      width: 250px;
+    }
+  }
+  .prebook-button {
+    margin: 0 auto;
+  }
+  .half-width.nothing {
+    margin-top: 2rem;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .touch-container {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100vh;
+  }
+  .get-in img {
+    width: 100%;
+  }
+  .submit-area {
+    height: 50%;
+    margin-left: 14%;
+    margin-top: -35%;
+  }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .brand-title {
+    text-align: center;
+    font-size: 5rem;
+    margin: 0 auto;
+    text-shadow: 0 5px 5px;
+    margin-left: -12%;
+  }
+  .start-journey {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .half-width img {
+    width: 400px;
+  }
+  @keyframes img-animation {
+    from {
+      width: 100px;
+    }
+    to {
+      width: 400px;
+    }
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
+  /* .grid-container:last-child{
+    width:90%;
+  } */
+
+  .touch-container {
+    border: none;
+  }
+  .submit-area {
+    margin-top: -10%;
+  }
+  .submit {
+    text-align: center;
+    margin-top: 10px;
+    height: 2rem;
+    width: 20rem;
+    border: none;
+  }
+  .submit-btn {
+    height: 2rem;
+    width: 18rem;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 0px;
+    margin-left: 1rem;
+  }
+}
